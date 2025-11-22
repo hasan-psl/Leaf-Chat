@@ -20,6 +20,8 @@ Leaf Chat is a lightweight desktop application that wraps WhatsApp Web in a nati
 
 The application is designed to be as lightweight as possible while maintaining full functionality. The entire codebase is under 130 lines of well-commented C code, making it easy to understand and modify.
 
+![First look: Login view](https://i.imgur.com/Wou6wyR.png)
+
 ## Dependencies
 
 ### Build Dependencies
@@ -28,7 +30,7 @@ The application is designed to be as lightweight as possible while maintaining f
 - **pkg-config**
 - **GCC** or compatible C compiler
 - **GTK3 development libraries** (`libgtk-3-dev`)
-- **WebKit2GTK development libraries** (`libwebkit2gtk-4.0-dev`)
+- **WebKit2GTK development libraries** (`libwebkit2gtk-4.1-dev`)
 
 ### Runtime Dependencies
 
@@ -41,7 +43,7 @@ The application is designed to be as lightweight as possible while maintaining f
 
 ```bash
 sudo apt-get update
-sudo apt-get install -y cmake pkg-config libgtk-3-dev libwebkit2gtk-4.0-dev
+sudo apt-get install -y cmake pkg-config libgtk-3-dev libwebkit2gtk-4.1-dev
 ```
 
 ## Compile Instructions
@@ -137,7 +139,7 @@ Version: 1.0.0
 Section: net
 Priority: optional
 Architecture: amd64
-Depends: libgtk-3-0, libwebkit2gtk-4.0-37
+Depends: libgtk-3-0, libwebkit2gtk-4.1-0
 Maintainer: Hasan <hasanimroz.personal@gmail.com>
 Description: Minimal WhatsApp Web client
  A lightweight desktop application that wraps WhatsApp Web
@@ -156,13 +158,13 @@ chmod 644 debian/usr/share/applications/leaf-chat.desktop
 ### 6. Build the Package
 
 ```bash
-dpkg-deb --build debian ../leaf-chat_1.0.0_amd64.deb
+dpkg-deb --root-owner-group --build Leaf-Chat
 ```
 
 ### 7. Install the Package
 
 ```bash
-sudo dpkg -i leaf-chat_1.0.0_amd64.deb
+sudo dpkg -i Leaf-Chat.deb
 ```
 
 If there are missing dependencies, install them with:
@@ -171,10 +173,20 @@ If there are missing dependencies, install them with:
 sudo apt-get install -f
 ```
 
+## Gallery
+- Conversation list and main UI:
+![Conversation list and main UI](https://i.imgur.com/0ujIHPM.png)
+
+- Chat window with messages:
+![Chat window with messages](https://i.imgur.com/RQvbCXQ.png)
+
+- Chat themes:
+![Chat themes](https://i.imgur.com/GfPhfNW.png)
+
+- Keyboard shortcuts:
+![Keyboard shortcuts](https://i.imgur.com/BuuVAQT.png)
+
+
 ## License
 
-[Add your license here]
-
-## Contributing
-
-[Add contribution guidelines if applicable]
+[MIT License]
