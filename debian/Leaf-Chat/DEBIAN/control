@@ -1,0 +1,19 @@
+Package: Leaf-Chat
+Version: 1.2
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Hasan <hasanimroz.personal@gmail.com>
+Homepage: https://github.com/hasan-psl/leaf-chat
+Depends: libgtk-3-0, libwebkit2gtk-4.1-0
+License: MIT
+Description: Lightweight WhatsApp Web desktop wrapper built with C and WebKitGTK
+ Leaf-Chat is a minimal WhatsApp Web client designed for extremely low RAM usage
+ and a clean, distraction-free chat experience. Built with C and WebKitGTK for
+ maximum performance on Linux systems.
+ .
+ This package includes a standalone executable intended for Ubuntu, Debian, and
+ other modern Linux distributions with WebKitGTK 4.1 support.
+ .
+ Source code:
+ https://github.com/hasan-psl/leaf-chat

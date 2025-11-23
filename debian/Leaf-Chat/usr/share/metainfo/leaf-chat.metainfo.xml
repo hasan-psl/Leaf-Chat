@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop">
+  <id>com.hasan.LeafChat</id>
+  <launchable type="desktop-id">leaf-chat.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Leaf Chat</name>
+  <summary>Lightweight WhatsApp Web wrapper</summary>
+  <description>
+    <p>Leaf Chat is an ultra-light WhatsApp Web wrapper built with C and WebKitGTK,</p>
+    <p>designed for extremely low RAM usage and a distraction-free interface.</p>
+  </description>
+
+  <url type="homepage">https://github.com/hasan-psl/Leaf-Chat</url>
+  <developer id="hasan-psl.github.io">
+  <name>Hasan</name>
+</developer>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://camo.githubusercontent.com/97624ea3febfc7dabb07bc82a043b18ae1f5ad2744acf927cc3c7335e6f836c3/68747470733a2f2f692e696d6775722e636f6d2f576f75367779522e706e67</image>
+      <caption>Login window</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://camo.githubusercontent.com/ec24f83a96da3600bbf9b5431931cf17eb198b191bfc162e1d8257ee183570a1/68747470733a2f2f692e696d6775722e636f6d2f30756a4948504d2e706e67</image>
+      <caption>Conversation list and main UI</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://camo.githubusercontent.com/ccac619396d32260614779aeaaf404eec364ef756b5332a8e9af6db2172d95c8/68747470733a2f2f692e696d6775722e636f6d2f525176624358512e706e67</image>
+      <caption>Chat window with messages</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://camo.githubusercontent.com/96a946241e2484cd0a8bc344e9398a38cc44c9f96ed30831d533684a199fa897/68747470733a2f2f692e696d6775722e636f6d2f47665068664e572e706e67</image>
+      <caption>Chat themes</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://camo.githubusercontent.com/850f33b7168ff960032f982458f8459f862ed85bb111ef1c09d5d3fb54e0f27d/68747470733a2f2f692e696d6775722e636f6d2f427575564151542e706e67</image>
+      <caption>Keyboard shortcuts</caption>
+    </screenshot>
+  </screenshots>
+
+  <categories>
+    <category>Network</category>
+    <category>Chat</category>
+    <category>Utility</category>
+  </categories>
+
+  <releases>
+    <release version="1.2" date="2025-11-23">
+      <description>
+        <p>Initial stable release for Debian/Ubuntu with WebKitGTK 4.1 support.</p>
+      </description>
+    </release>
+  </releases>
+</component>
+
